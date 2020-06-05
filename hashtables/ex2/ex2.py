@@ -34,9 +34,13 @@ def reconstruct_trip(tickets, length):
         # we initiat with none but we get lax
         # so we then will get SFO if we pass in lax
         # that will continue untill we have nothing left
+        # cur = LAX
         route.append(cache[cur])
         # will set cur to next item
+        # cur = cache["LAX"]
         cur = cache[cur]
+        # this will not be SFO
+        # which will be pass back in route.append(cache["SFO"])
         # print(cur)
     return route
 
