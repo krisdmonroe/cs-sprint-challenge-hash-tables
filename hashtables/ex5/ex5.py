@@ -7,9 +7,23 @@ def finder(files, queries):
     YOUR CODE HERE
     """
     # Your code here
-
-    return result
-
+    cache = {}
+    result = []
+    # for f in files:
+    #     # print(f)
+    #     if f in cache:
+    #         cache[f] += 1
+    #     else:
+    #         cache[f] = 1
+    #     for i in queries:
+    #         print(i)
+    #         if i in cache:
+    #             result.append(i)
+    # return result
+    files[files.find('/'):]
+    print(files)
+        # for q in queries:
+        #     print(q)
 
 if __name__ == "__main__":
     files = [
