@@ -44,9 +44,12 @@ def has_negatives(a):
                 if reverse in cache:
                     # if reverse is greater we know its positive
                     if reverse > i:
+                        print(reverse, i)
                         key.append(reverse)
                     else:
+                        # reverse is less then i we want to only return positive numbers
                         # append the positive number
+                        # print(i, reverse)
                         key.append(i)
     return key
     # going to try to append negatives first------
@@ -62,7 +65,8 @@ def has_negatives(a):
     #         if i in cache:
     #             key.append(i)
     # return key
-    
+
+# if __name__ == "__main__":
     # print(has_negatives([-1,-2,1,2,3,4,-4]))
     # print(has_negatives([1,-1,2,3,-4,-3,4,-5,6,7]))
     # print(has_negatives([1,2,3])
@@ -75,4 +79,5 @@ def has_negatives(a):
     # reverse of -1 is 1 
     # is 1 > -1 yes so append to list
     # list is now 1
+
 
