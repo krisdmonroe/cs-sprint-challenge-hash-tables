@@ -16,13 +16,13 @@ def get_indices_of_item_weights(weights, length, limit):
         # print(i, end = " ")
         # print(weights[i])
         # print(i)
-        x = limit - weights[i]
+        c = limit - weights[i]
         # x is limit minus weight now were looking for that value in the cache
-        if x in cache:
-            if cache[x] < i:
-                return [i, cache[x]]
+        if c in cache:
+            if cache[c] < i:
+                return [i, cache[c]]
             else:    
-                return [cache[x], i]
+                return [cache[c], i]
             # print(cache)
         # otherwise add it to the cache
         else:
